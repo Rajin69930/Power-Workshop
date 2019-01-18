@@ -10,9 +10,9 @@ Author: Rajin Maharjan
 Date: 2019-01-15
 """
 def disect(a):
-    del a[0]
+    a.remove(a[0])
     if(len(a)-1>0):
-        del a[len(a)-1]
+        a.remove(a[len(a)-1])
     return a
 
 li_st = list()
